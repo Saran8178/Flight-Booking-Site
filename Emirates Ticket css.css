@@ -1,0 +1,28 @@
+.first{
+    width: 800px;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 300px;
+}
+*{
+    background-image: url(./Gray\ 2.jpg);background-size: cover;
+}
+.second{text-align: center;
+}
+.middle.second{
+    background-color: black;
+}
+.submit{
+    text-decoration: none;
+}
+.last{
+    text-align: center;
+}
+.top{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: lightslategrey;
+}
+.demo{
+    text-decoration: indigo;
+}

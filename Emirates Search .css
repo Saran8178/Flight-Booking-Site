@@ -1,0 +1,131 @@
+.image{
+    width: 160px;
+    height: 140px;
+}
+nav{
+  display: flex;
+  background-color: black;
+  
+ 
+
+}
+ nav ul{
+    display: flex;
+    list-style-type: none;
+    
+    
+    
+}
+nav ul li{
+    margin: 40px 40px;
+    padding: 0 10px;
+
+   
+   
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.size{
+    font-size: 50px;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+
+}
+.fly{
+    width: 600px;
+    height: 300px;
+    padding-left: 300px;
+
+}
+.diff{
+    background-color: black;
+    color: red;
+    padding-bottom: 11px;
+    font-size: 17px;
+    
+    
+}
+.diff a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 30px;
+    
+}
+.last{
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif; 
+} 
+.container{
+    width: 100 %;
+    min-height: 15%;
+    padding:5%;
+    display:flex ; 
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.web{
+    width: 100 %;
+    min-height: 15%;
+    padding:5%;
+    display:flex ; 
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.searchbar{
+     width: 100%;
+     max-width: 700px;
+     background-color:whitesmoke;
+       display: flex;
+       align-items: center;
+       border-radius: 5px;
+     
+       text-align: left;
+}
+.webx{
+    width: 100%;
+    max-width: 700px;
+    background-color:whitesmoke;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+    
+      text-align: left;
+}
+
+.searchbar input{
+     background: transparent;
+     flex: 1;
+     border: 0;
+     outline: none;
+     padding: 24px 20px;
+     font-size: 20px;
+     color: black;
+}
+.webx input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: black;
+}
+.searchbar button img{
+    width: 50px;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetVibe Airlines</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Link Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ccc;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+        }
+        nav .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav .logo i {
+            margin-right: 10px;
+            font-size: 28px;
+            color: #ff6600;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+        .container {
+            margin: 50px auto;
+            text-align: center;
+            color: #fff;
+        }
+        .container form {
+            display: inline-flex;
+            align-items: center;
+        }
+        .container input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .container button {
+            padding: 10px 15px;
+            background-color: #ff6600;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container button i {
+            font-size: 16px;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card i {
+            font-size: 40px;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            margin: 15px 0 10px;
+            font-size: 18px;
+        }
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-plane"></i> JetVibe 
+        </div>
+        <ul class="nav">
+            <li><a href="#" class="same">HOME</a></li>
+            <li><a href="#" class="same">ACHIEVEMENTS</a></li>
+            <li><a href="#" class="same">EXPERIENCE</a></li>
+            <li><a href="#" class="same">ABOUT US</a></li>
+            <li><a href="./Emirates Sig in.html" class="same">SIGNUP</a></li>
+            <li><a href="./Emirates Login new.html" class="same">LOGIN</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form action="https://www.google.com/search" method="GET" class="searchbar">
+            <input type="text" placeholder="Search Flights" name="q">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        <h3>
+            Search for Emirates flights and book online. See our routes and schedules,
+            and discover more about the experience you can look forward to on board.
+        </h3>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <i class="fas fa-plane-departure"></i>
+            <h3>Explore Destinations</h3>
+            <p>Discover the best places to visit with Emirates.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <i class="fas fa-couch"></i>
+            <h3>Luxury Onboard</h3>
+            <p>Experience world-class service and comfort.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <i class="fas fa-tags"></i>
+            <h3>Exclusive Deals</h3>
+            <p>Find the best flight deals and offers for your journey.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+    <footer>
+        <p>© Copyright JetVibe 2025</p>
+    </footer>
+</body>
+</html>
