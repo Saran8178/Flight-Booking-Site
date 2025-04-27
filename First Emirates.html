@@ -83,6 +83,47 @@
         .container button i {
             font-size: 16px;
         }
+
+        /* Slider Styling */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            width: 100%; /* Set each image to take full width of container */
+            height: 500px;
+            object-fit: cover;
+        }
+        .left-arrow, .right-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+            font-size: 20px;
+        }
+
+        .left-arrow {
+            left: 20px;
+        }
+        
+        .right-arrow {
+            right: 20px;
+        }
+
         .cards-container {
             display: flex;
             justify-content: center;
@@ -155,6 +196,7 @@
             <li><a href="./Emirates Login new.html" class="same">LOGIN</a></li>
         </ul>
     </nav>
+
     <div class="container">
         <form action="https://www.google.com/search" method="GET" class="searchbar">
             <input type="text" placeholder="Search Flights" name="q">
@@ -166,7 +208,9 @@
             Search for Emirates flights and book online. See our routes and schedules,
             and discover more about the experience you can look forward to on board.
         </h3>
-    </div>
+   
+
+    <!-- Cards Section -->
     <div class="cards-container">
         <div class="card">
             <i class="fas fa-plane-departure"></i>
@@ -187,8 +231,30 @@
             <a href="#">Learn More</a>
         </div>
     </div>
+
     <footer>
         <p>© Copyright JetVibe 2025</p>
     </footer>
+
+    <!-- Script for Slider -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function prevSlide() {
+            currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+            updateSlidePosition();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+            updateSlidePosition();
+        }
+
+        function updateSlidePosition() {
+            const slider = document.querySelector('.slider');
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
 </body>
 </html>
